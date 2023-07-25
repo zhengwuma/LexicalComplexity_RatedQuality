@@ -318,3 +318,34 @@ for name in model_name:
   filename = name + "_coef_plot.png"
   print(name + ":\n", beta_std)
   plt.save(filename, dpi=300, width=6, height=4, units='in')
+
+"""# Plot model regressors' correlation"""
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+model_name = ['model_in', 'model_ex', 'model_c', 'model_la']
+
+for name in model_name:
+    predictors_variable_name = f'X_{name}'
+    predictors = globals()[predictors_variable_name]
+    correlation_matrix = predictors.corr()
+    font = 'DejaVu Sans'
+    plt.rcParams['font.family'] = font
+
+    num_indices = len(correlation_matrix.columns)
+    fig_size = (min(max(num_indices * 0.5, 8), 12), min(max(num_indices * 0.5, 6), 10))
+
+    font_scale = 1.2
+    if name == 'model_la':
+        font_scale = 0.8
+    sns.set(font_scale=font_scale)
+    plt.figure(figsize=fig_size)
+
+    ax = plt.gca()
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", alpha=0.9, ax=ax)
+
+    filename = name + "_reg_corr.png"
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
