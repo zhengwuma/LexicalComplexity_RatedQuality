@@ -1,0 +1,22 @@
+### color list
+
+LA #ff9f97
+C #ff8357
+Scale #e25b45
+LD #fac172
+NDWERZ #98b6ec
+NDWESZ #89d5c9
+VV1 #adc865
+VV2 #ffacbb
+MATTR #fed7dd
+MSTTR #f6d7c3
+MTLD ##cdd885
+HDD #acbfea
+COCA_Bi_DP #ad7b9d
+BNC_Range #a1dcd8
+BNC_Bi_Freq #c5d6ac
+WN_SD #e2d0dc
+COCA_Tri2_DP ##fdc441
+Sem_D ##ef852f
+LSA_Cosine ##823d32
+LSA_Max_Cosine ##e3cfb4

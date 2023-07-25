@@ -1,0 +1,39 @@
+﻿Index Name,Brief description,Stable across different text lengths?,Original citation
+basic_ntokens,Number of tokens. Included in TAALED for diagnostic purposes.,No,
+basic_ntypes,Number of types. Included in TAALED for dianostic purposes.,No,
+basic_ncontent_tokens,Number of content word tokens. Included in TAALED for diagnostic purposes.,No,
+basic_ncontent_types,Number of content word types. Included in TAALED for diagnostic purposes.,No,
+basic_nfunction_tokens,Number of function word tokens. Included in TAALED for diagnostic purposes.,No,
+basic_nfunction_types,Number of function word types. Included in TAALED for diagnostic purposes.,No,
+lexical_density_types,Number of content words types divided by number of total number of types.,"Not tested in Zenker & Kyle, 2021",
+lexical_density_tokens,Number of content words tokens divided by number of total number of tokens.,"Not tested in Zenker & Kyle, 2021",
+simple_ttr_aw,Type-token ratio for all words. (Not stable across different text lengths),"No; see Zenker & Kyle, 2021","Johnson, 1944"
+simple_ttr_cw,Type-token ratio for content words. (Not stable across different text lengths),"No; see Zenker & Kyle, 2021","Johnson, 1944"
+simple_ttr_fw,Type-token ratio for function words. (Not stable across different text lengths),"No; see Zenker & Kyle, 2021","Johnson, 1944"
+root_ttr_aw,"Number of types divided by the square root of the number of tokens. Also referred to as ""Guiraud's Index"".","No; see Zenker & Kyle, 2021","Guiraud, 1960"
+root_ttr_cw,"Number of content word types divided by the square root of the number of content word tokens. Also referred to as ""Guiraud's Index"".","No; see Zenker & Kyle, 2021","Guiraud, 1960"
+root_ttr_fw,"Number of function word types divided by the square root of the number of function word tokens. Also referred to as ""Guiraud's Index"".","No; see Zenker & Kyle, 2021","Guiraud, 1960"
+log_ttr_aw,Log of number of types divided by the log of the number of tokens.,"No; see Zenker & Kyle, 2021","Chotlos, 1944; Herdan, 1960"
+log_ttr_cw,Log of number of content word types divided by the log of the number of content word tokens.,"No; see Zenker & Kyle, 2021","Chotlos, 1944; Herdan, 1960"
+log_ttr_fw,Log of number of function word types divided by the log of the number of function word tokens.,"No; see Zenker & Kyle, 2021","Chotlos, 1944; Herdan, 1960"
+maas_ttr_aw,More complex transformation of TTR that attempts to fit the value to a logarithmic curve. ,"Stable in some cases; see Zenker & Kyle, 2021","Maas, 1972"
+maas_ttr_cw,More complex transformation of TTR (content words only)  that attempts to fit the value to a logarithmic curve. ,"Stable in some cases; see Zenker & Kyle, 2021","Maas, 1972"
+maas_ttr_fw,More complex transformation of TTR (function words only) that attempts to fit the value to a logarithmic curve. ,"Stable in some cases; see Zenker & Kyle, 2021","Maas, 1972"
+mattr50_aw,Moving average type token ratio (50-word window),"Yes; see Zenker & Kyle, 2021","Covington & McFall, 2010"
+mattr50_cw,Moving average type token ratio for content words (50-word window),"Yes; see Zenker & Kyle, 2021","Covington & McFall, 2010"
+mattr50_fw,Moving average type token ratio for function words (50-word window),"Yes; see Zenker & Kyle, 2021","Covington & McFall, 2010"
+msttr50_aw,Mean segmental type token ratio (50-word non overlapping segments),"Not tested in Zenker & Kyle, 2021","Johnson, 1944"
+msttr50_cw,Mean segmental type token ratio for content words (50-word non overlapping segments),"Not tested in Zenker & Kyle, 2022","Johnson, 1944"
+msttr50_fw,Mean segmental type token ratio for function words (50-word non overlapping segments),"Not tested in Zenker & Kyle, 2023","Johnson, 1944"
+hdd42_aw,"HD-D uses the hypergeometric distribution to calculate the probability of encountering one of its tokens in a random sample of 42 tokens. For ease of interpretation, we convert this to the same scale as TTR.","Yes; see Zenker & Kyle, 2021","McCarthy & Jarvis, 2007"
+hdd42_cw,"HD-D uses the hypergeometric distribution to calculate the probability of encountering one of its tokens in a random sample of 42 tokens (content words only). For ease of interpretation, we convert this to the same scale as TTR.","Yes; see Zenker & Kyle, 2021","McCarthy & Jarvis, 2007"
+hdd42_fw,"HD-D uses the hypergeometric distribution to calculate the probability of encountering one of its tokens in a random sample of 42 tokens (function words only). For ease of interpretation, we convert this to the same scale as TTR.","Yes; see Zenker & Kyle, 2021","McCarthy & Jarvis, 2007"
+mtld_original_aw,MTLD is based on the average number of tokens it takes to reach a given TTR value (.720). ,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_original_cw,MTLD is based on the average number of content word tokens it takes to reach a given TTR value (.720). ,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_original_fw,MTLD is based on the average number of function word tokens it takes to reach a given TTR value (.720). ,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_bi_aw,Version of MTLD that takes a moving- average approach to calculating the index. The final value is the mean score when MTLD is run forwards and backwards (but partial factors are not calculated),"Stable in some cases; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_bi_cw,Version of MTLD (content words only) that takes a moving- average approach to calculating the index. The final value is the mean score when MTLD is run forwards and backwards (but partial factors are not calculated),"Stable in some cases; see Zenker & Kyle, 2022","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_bi_fw,Version of MTLD (function words only) that takes a moving- average approach to calculating the index. The final value is the mean score when MTLD is run forwards and backwards (but partial factors are not calculated),"Stable in some cases; see Zenker & Kyle, 2023","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_wrap_aw,Version of MTLD (content words only) that takes a moving- average approach to calculating the index. The final factor is calculated by wrapping back to the beginning of the text.,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_wrap_cw,Version of MTLD (content words only) that takes a moving- average approach to calculating the index. The final factor is calculated by wrapping back to the beginning of the text.,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
+mtld_ma_wrap_fw,Version of MTLD (content words only) that takes a moving- average approach to calculating the index. The final factor is calculated by wrapping back to the beginning of the text.,"Yes; see Zenker & Kyle, 2021","McCarthy, 2005; McCarthy & Jarvis, 2010"
